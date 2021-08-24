@@ -4,8 +4,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-
-
 // HEADER SECTION //
 header {
   position: relative;
@@ -55,48 +53,44 @@ header {
 .header-bar {
   background: $bg-primary;
   color: #fff;
- .form{
-   
-    form{
-        margin-top: 15px;
-        .form-control{
-            width: 200px;
-            
-        }
-        input{
-          width: 200px;
-            padding: 6px;
-            border: 0;
-            border-radius: 2px;
-        }
-        label{
-            margin:0 10px;
-        }
-        button{
-          background: $bg-secondary;
-          color: white;
-         padding: 6px 20px;
-         border-radius: 2px;
-          margin-left: 40px;
-        }
-        button:hover{
-          background: cyan;
-          color: darkcyan;
-        }
-       
+  .form {
+    form {
+      margin-top: 15px;
+      .form-control {
+        width: 200px;
+      }
+      input {
+        width: 200px;
+        padding: 6px;
+        border: 0;
+        border-radius: 2px;
+      }
+      label {
+        margin: 0 10px;
+      }
+      button {
+        background: $bg-secondary;
+        color: white;
+        padding: 6px 20px;
+        border-radius: 2px;
+        margin-left: 40px;
+      }
+      button:hover {
+        background: cyan;
+        color: darkcyan;
+      }
     }
- }
+  }
 }
 // navbar
 nav {
   position: fixed;
   .nav-link {
     color: $text-secondary;
-   
   }
-  .active{
+  .active {
     color: $bg-secondary;
-}
+  }
   .nav-link:hover {
     color: $bg-secondary;
   }
@@ -108,63 +102,116 @@ nav {
     font-size: 40px;
     font-weight: 700;
     color: $text-secondary;
-    span{
-        color: $bg-secondary;
+    span {
+      color: $bg-secondary;
     }
   }
-
 }
 // HEADER SECTION //
 
 // SPECIAL  SECTION //
-.special-sec{
-  h2{
-      font-size: 25px;
-      color: $bg-primary;
-      font-weight: 500;
+.special-sec {
+  h2 {
+    font-size: 25px;
+    color: $bg-primary;
+    font-weight: 500;
   }
 
-  p{
+  p {
     font-size: 16px;
     color: #626262;
     margin-top: 10px;
-
   }
 
-  .row{
+  .row {
     margin-top: 20px;
-    img{
+    img {
       width: 100%;
       height: 100px;
     }
 
-    p{
+    p {
       font-size: 15px;
       color: #626262;
       margin-bottom: 0;
     }
-    span{
+    span {
       font-size: 13px;
       color: #626262;
       margin-top: 0;
     }
 
-    .place-content{
-     
+    .place-content {
       border-radius: 6px;
       padding: 5px;
       background: #eeeeee;
     }
-    .place-content:hover{
-      height: 200px;
+    .place-content:hover {
+      height: 180px;
       border: 3px solid $bg-secondary;
       background: #333;
       color: #fff;
       cursor: pointer;
-      transition: height .3s ease-in;
+      transition: height 0.7s ease-in;
       padding: 0;
-      p,span{
+      p,
+      span {
         color: #fff;
+      }
+    }
+  }
+}
+// special section
+
+//holyday section
+.holyday-section {
+  background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)),
+    url("/img/Carosel/img_3.jpg") no-repeat center center/cover;
+  color: #fff;
+
+  h2 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  p {
+    font-size: 16px;
+    color: #9eafc0;
+    font-weight: 400;
+  }
+
+  .holyday-item {
+    text-align: center;
+
+    .bg-items {
+      display: flex;
+      background: none;
+      border: 3px solid #fff;
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      margin: 20px auto;
+
+      i {
+        color: #fff;
+
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .row div:hover {
+      cursor: pointer;
+      color: $bg-secondary;
+      transition: .7s ease;
+
+      i {
+        color: $bg-secondary;
+      }
+
+      .bg-items {
+        border-color: $bg-secondary;
       }
     }
   }
