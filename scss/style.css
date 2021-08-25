@@ -79,6 +79,8 @@ header {
 
 .header-bar .form form label {
   margin: 0 10px;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .header-bar .form form button {
@@ -368,7 +370,7 @@ footer p {
     width: 100%;
   }
   header .header-bar .form form label {
-    margin: 10px 0;
+    margin: 0;
   }
   header .header-bar .form form button {
     background: #1dd2af;
@@ -396,10 +398,77 @@ footer p {
     height: auto;
   }
   .special-sec .row .holi-place {
-    margin: 10px 0;
+    margin: 20px 0;
   }
   .details-section {
     text-align: center;
+  }
+  .details-section {
+    margin-top: 10px;
+  }
+  .details-section div {
+    margin: 15px 0;
+  }
+  .details-section .lastest-wrap {
+    width: 100%;
+    text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  header .header-bar {
+    background: #2c3e50;
+    color: #fff;
+  }
+  header .header-bar .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .header-bar .form form {
+    text-align: left;
+    margin-top: 15px;
+  }
+  header .header-bar .form form input {
+    width: 100%;
+  }
+  header .header-bar .form form label {
+    margin: 0;
+  }
+  header .header-bar .form form button {
+    background: #1dd2af;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 2px;
+    width: auto;
+    width: 100%;
+    margin: 20px auto;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .special-sec h2 {
+    font-size: 25px;
+    color: #2c3e50;
+    font-weight: 500;
+  }
+  .special-sec p {
+    font-size: 16px;
+    color: #626262;
+    margin-top: 10px;
+  }
+  .special-sec .row {
+    margin-top: 20px;
+  }
+  .special-sec .row img {
+    width: 100%;
+    height: auto;
+  }
+  .special-sec .row .holi-place {
+    margin: 20px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -67,6 +67,8 @@ header {
       }
       label {
         margin: 0 10px;
+        font-size: 13px;
+        font-weight: 500;
       }
       button {
         background: $bg-secondary;
@@ -327,12 +329,12 @@ footer {
   header {
     text-align: center;
 
-    .header-content{
-      h1{
+    .header-content {
+      h1 {
         font-size: 35px;
       }
-      p{
-       font-size: 15px;
+      p {
+        font-size: 15px;
       }
     }
     .header-bar {
@@ -342,13 +344,12 @@ footer {
         form {
           text-align: left;
           margin-top: 15px;
-        
+
           input {
             width: 100%;
-          
           }
           label {
-            margin: 10px 0;
+            margin: 0;
           }
           button {
             background: $bg-secondary;
@@ -358,7 +359,6 @@ footer {
             width: 100%;
             margin: 20px 0;
           }
-        
         }
       }
     }
@@ -370,28 +370,101 @@ footer {
       color: $bg-primary;
       font-weight: 500;
     }
-  
+
     p {
       font-size: 16px;
       color: #626262;
       margin-top: 10px;
     }
-  
+
     .row {
       margin-top: 20px;
       img {
         width: 100%;
         height: auto;
       }
-      .holi-place{
-        margin: 10px 0;
+      .holi-place {
+        margin: 20px 0;
       }
-     
     }
   }
-  
-  .details-section{
-    text-align: center;
 
+  .details-section {
+    text-align: center;
+  }
+
+  .details-section {
+    margin-top: 10px;
+    div {
+      margin: 15px 0;
+    }
+    .lastest-wrap {
+      width: 100%;
+      text-align: left;
+      justify-content: center;
+    }
   }
 }
+@media only screen and (max-width: 990px) {
+  header {
+    .header-bar {
+      background: $bg-primary;
+      color: #fff;
+      .row {
+        display: flex;
+      }
+      .form {
+        form {
+          text-align: left;
+          margin-top: 15px;
+
+          input {
+            width: 100%;
+          }
+          label {
+            margin: 0;
+          }
+          button {
+            background: $bg-secondary;
+            color: white;
+            padding: 6px 20px;
+            border-radius: 2px;
+            width: auto;
+            width: 100%;
+            margin: 20px auto;
+          }
+        }
+      }
+    }
+
+  }
+
+
+}
+@media only screen and (max-width: 798px){
+  .special-sec {
+    h2 {
+      font-size: 25px;
+      color: $bg-primary;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 16px;
+      color: #626262;
+      margin-top: 10px;
+    }
+
+    .row {
+      margin-top: 20px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .holi-place {
+        margin: 20px 0;
+      }
+    }
+  }
+}
+
