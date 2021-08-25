@@ -99,15 +99,15 @@ nav {
 }
 
 nav .nav-link {
-  color: #5d6e80;
+  color: #5d6e80 !important;
 }
 
 nav .active {
-  color: #1dd2af;
+  color: #1dd2af !important;
 }
 
 nav .nav-link:hover {
-  color: #1dd2af;
+  color: #1dd2af !important;
 }
 
 nav .navbar-toggler-icon {
@@ -165,13 +165,12 @@ nav a.logo span {
 }
 
 .special-sec .row .place-content:hover {
-  height: 180px;
   border: 3px solid #1dd2af;
   background: #333;
   color: #fff;
   cursor: pointer;
-  -webkit-transition: height 0.7s ease-in;
-  transition: height 0.7s ease-in;
+  -webkit-transition: height 1s ease;
+  transition: height 1s ease;
   padding: 0;
 }
 
@@ -228,8 +227,8 @@ nav a.logo span {
 .holyday-section .holyday-item .row div:hover {
   cursor: pointer;
   color: #1dd2af;
-  -webkit-transition: .7s ease;
-  transition: .7s ease;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
 }
 
 .holyday-section .holyday-item .row div:hover i {
@@ -238,5 +237,169 @@ nav a.logo span {
 
 .holyday-section .holyday-item .row div:hover .bg-items {
   border-color: #1dd2af;
+}
+
+.review-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.review-section h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.review-section p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #626262;
+}
+
+.review-section .card {
+  margin-top: 20px;
+  text-align: left;
+  padding: 10px 0;
+}
+
+.review-section .card span {
+  color: #1dd2af;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.review-section .card small {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.review-section .row div > div:hover {
+  border-top: 5px solid #1dd2af;
+  cursor: pointer;
+}
+
+.details-section {
+  background: #2c3e50;
+  color: #fff;
+}
+
+.details-section h3 {
+  color: #1dd2af;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.details-section p {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.details-section form button {
+  background: #1dd2af;
+  border: 0;
+}
+
+.details-section img {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  margin-top: 5px;
+}
+
+.details-section .lastest-wrap p {
+  margin-left: 10px;
+}
+
+.details-section .lastest-wrap p span {
+  font-size: 13px;
+  font-weight: 300;
+  color: #1dd2af;
+}
+
+.details-section .tags span {
+  font-size: 13px;
+  font-weight: 500;
+  margin: 2px 0;
+}
+
+.details-section .social-img {
+  margin-top: 10px;
+}
+
+.details-section .social-img i {
+  padding: 0 10px;
+}
+
+.details-section .social-img i:nth-child(1) {
+  padding-left: 0;
+}
+
+footer {
+  background: #2c3e50;
+  color: #fff;
+  -webkit-box-shadow: inset 0px 7px 8px -10px #ccc;
+          box-shadow: inset 0px 7px 8px -10px #ccc;
+}
+
+footer p {
+  margin: auto 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    text-align: center;
+  }
+  header .header-content h1 {
+    font-size: 35px;
+  }
+  header .header-content p {
+    font-size: 15px;
+  }
+  header .header-bar {
+    background: #2c3e50;
+    color: #fff;
+  }
+  header .header-bar .form form {
+    text-align: left;
+    margin-top: 15px;
+  }
+  header .header-bar .form form input {
+    width: 100%;
+  }
+  header .header-bar .form form label {
+    margin: 10px 0;
+  }
+  header .header-bar .form form button {
+    background: #1dd2af;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 2px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .special-sec h2 {
+    font-size: 25px;
+    color: #2c3e50;
+    font-weight: 500;
+  }
+  .special-sec p {
+    font-size: 16px;
+    color: #626262;
+    margin-top: 10px;
+  }
+  .special-sec .row {
+    margin-top: 20px;
+  }
+  .special-sec .row img {
+    width: 100%;
+    height: auto;
+  }
+  .special-sec .row .holi-place {
+    margin: 10px 0;
+  }
+  .details-section {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
